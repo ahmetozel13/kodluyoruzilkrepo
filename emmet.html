@@ -1,0 +1,94 @@
+<h2>EMMET / ZEN CODING</h2>
+<!--
+    etiket isimlerini direkt verebiliyoruz
+    + kardeş öğe
+    > içinde öğe
+    ^yukarı çık ve öğe oluştur
+    * çarp ->p*3->3 adet paragraf
+    lorem ??? örnek olarak anlamsız metin içeriği sunar.
+    lorem4-> 4 kelimelik lorem üretir
+    .->class
+    #->id
+-->
+
+<!-- kısaltma yazıldıktan sonra tab tuşuna basıldığında emmet özelliği aktif olur. -->
+
+<!--    h1+p+p+h2+p+p+p+p   -->
+    <h1></h1>
+    <p></p>
+    <p></p>
+    <h2></h2>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+
+
+<!--    h1+p+p+h2+p+p+p+p   ->  h1+p*2+h2+p*4   -->
+
+    <!-- <h1+p*2+h2+p*4 -->
+    <h1></h1>
+    <p></p>
+    <p></p>
+    <h2></h2>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+<!-- ul>li*5 -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+<!-- ul>li*3^p*2+h3 -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <p></p>
+    <p></p>
+    <h3></h3>
+<!-- lorem -->
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, cum sint. Nemo nobis esse possimus error quibusdam, pariatur voluptas dignissimos minima autem, modi quasi ut molestiae voluptates ea vel minus.
+<!-- ul>li*3>lorem1^p*2>lorem4+h3>lorem1 --> <!--HATALI-->
+    <ul>
+        <li>Lorem.</li>
+        <li>Fugit.</li>
+        <li>Ut!</li>
+        <p>
+            Lorem ipsum dolor sit.
+            <h3>Lorem.</h3>
+        </p>
+        <p>
+            Aliquid dolorum inventore nemo!
+            <h3>Eveniet.</h3>
+        </p>
+    </ul>
+<!-- ul>li*3>lorem1^^p*2>lorem4^3>lorem1 -->  <!--DÜZGÜN-->
+    <ul>
+        <li>Lorem.</li>
+        <li>Odit.</li>
+        <li>Deleniti.</li>
+    </ul>
+    <p>Lorem ipsum dolor sit.</p>
+    <p>Consequatur impedit voluptate numquam!</p>
+    <3>Lorem.</3>
+
+
+<!-- class oluşturma kısayolu -->
+    <!-- h3.deneme -->
+    <h3 class="deneme"></h3>
+    <!-- h3.deneme>lorem1 -->
+    <h3 class="deneme">Lorem.</h3>
+<!-- id oluşturma kısayolu -->
+    <!-- h3#idolussun>lorem1 -->
+    <h3 id="idolussun">Lorem.</h3>
+<!-- id ve class oluşturma -->
+    <!-- id ve class -->
+    <!-- h3.deneme#idolussun>lorem1 -->
+    <h3 class="deneme" id="idolussun">Lorem.</h3>
+    
