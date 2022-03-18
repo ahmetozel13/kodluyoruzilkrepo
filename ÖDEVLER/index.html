@@ -1,77 +1,41 @@
-<!-- İlk Web Sayfamızı Oluşturmak
-Eveet harika konular öğrendikten sonra sıra geldi ödevimize. Bu ödevimizde ilk web sayfamızı tasarlayacağız. Çok heyecanlı değil mi? Sizlerden istediğimiz çok basit bir şekilde öğrendiklerinizle bir web sayfası tasarlamanız.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doğada Yaşama Rotaları</title>
+    <link rel="stylesheet" href="custom.css">
 
-Siteyi açtığımızda adınız ve soyadınızı başlık şeklinde göstermeniz gerekiyor.
-Ad-Soyadın altında alt başlık olarak Hakkımda yazmalıdır.
-Altına paragraf içerisinde neler yaptığınızı ve nelerden hoşlandığınızı yazabilirsiniz.
-Web sitenizi kaydederken dosya adı olarak 'index.html' seçmeniz gerekmektedir.
-Yazdığınız kodları açıklayan yorum satırları eklemeyi unutmayın. -->
+</head>
+<body>
+    <header>
+        <h1>Doğada Yaşam Rotaları</h1>
+    </header>
+    <nav>
+        <a href="index.html" class="headPosition">Ana Sayfa</a>
+        <a href="rotalar.html" class="headPosition">Rotalar</a>
+        <a href="hakkımda.html" class="headPosition">Hakkımda</a>
+        <a href="iletisim.html" class="headPosition">İletişim</a>
+    </nav>
+    <section>
+        <h2>Anasayfa</h2>
+        <p>Hoşgeldiniz! Bu sayfada ilk defa yapmış olduğum web sitemi görüyorsunuz.</p>
+        <p>Bu Sitede sevdiğim gezi rotalarını derlemeye çalışacağım.</p>
+        <p>Mutlu günler :)</p>
+    
+        <a href="rotalar.html">Rotaları Görmek İçin Tıklayın!</a>   
+        <p>
+            <ul>
+                <li>Kamp Rotaları</li>
+                <li>Antik Kent Rotaları</li>
+                <li>Tatil Rotaları</li>
+                <li>Müze Rotaları</li>
+                <li>Doğa Rotaları</li>
+            </ul>
+        </p>
 
-<h1>AHMET ÖZEL</h1>
-<h2>Hakkında</h2>
-<p>Yapmaktan hoşlandığım şeylerin en başında kamp yapmak gelir.</p>
-
-<!-- Ödev 2
-Kişisel Sayfamızı Detaylandırmaya Devam Etmek
-Bir önceki ödevimizde ilk web sayfamızı yapıp bunu kişisel sayfamız olarak tasarlamıştık. Yeni öğrendiğimiz bilgiler dahilinde bu sayfayı geliştirmeye devam edelim. Hazır mısınız? E hadi buyurun o zaman.
-
-Sayfanıza bir adet resim ekleyin ve bu resime bir açıklama yazın.
-Sevdiğiniz film, dizi ve kitapları bunlar başlıklar olacak şekilde sıralayınız. (Film, dizi, kitap sıralı liste, içerikleri bullet liste olacak şekilde)
-Bunları sıralarken film ve dizilerin en az bir tanesine IMDb linki, kitapların bir tanesine de** Goodreads linkini** yazınız.
-Kurduğunuz yapılarda block, inline gibi elementler kullanmaya çalışın. -->
-
-<div>
-    <img src="data:image/jpeg;base64,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" alt="Kamçılık Görsel">
-</div>
-
-<ol>
-    <li><h2>Film</h2>
-        <ul>
-            <li>
-                <a href="https://www.imdb.com/title/tt0120737/?ref_=fn_al_tt_2">
-                    Yüzüklerin Efendisi
-                </a>
-            </li>
-            <li>
-                <a href="https://www.imdb.com/title/tt1877830/?ref_=fn_al_tt_1">
-                    Batman Triology
-                </a>
-            </li>
-            <li>
-                <a href="https://www.imdb.com/title/tt0289968/?ref_=nv_sr_srsg_3">
-                    Hababam Sınıfı
-                </a>
-            </li>
-        </ul>
-    </li>
-    <li><h2>Dizi</h2>
-        <ul>
-            <li>
-                <a href="https://www.imdb.com/title/tt0421384/?ref_=fn_al_tt_1">
-                    Kurtlar Vadisi
-                </a>
-            </li>
-            <li>
-                <a href="https://www.imdb.com/title/tt2442560/?ref_=nv_sr_srsg_0">
-                    The Peaky Blinders
-                </a>
-            </li>
-            <li>
-                <a href="https://www.imdb.com/title/tt2050064/?ref_=fn_al_tt_1">
-                     Kuzey Güney
-                </a>
-            </li>
-        </ul>
-    </li>
-    <li><h2>Kitap</h2>
-        <ul>
-            <li>
-                <a href="https://www.goodreads.com/book/show/7146457-beyaz-zambaklar-lkesinde?from_search=true&from_srp=true&qid=JlY3rrkaqE&rank=1">
-                    Beyaz Zambaklar Ülkesinde
-                </a>
-            </li>
-            <li>Cesur Yeni Dünya</li>
-            <li>İrade Felsefesi</li>
-        </ul>
-    </li>
-</ol>
+    </section>
+  
+</body>
+</html>

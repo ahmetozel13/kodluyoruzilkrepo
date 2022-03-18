@@ -1,0 +1,30 @@
+body {
+    background-color: #F7FDEC;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+section {
+    text-align: center;
+}
+
+ul {
+    border: 1px;
+    margin: auto;
+    padding-right: 5%;
+    text-align: center;
+    width: 200px;
+}
+
+.article {
+    border: 1px;
+    margin: auto;
+    width: 45%;
+    text-align: center;
+}
